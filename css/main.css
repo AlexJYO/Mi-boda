@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;1,300&display=swap');
+:root {
+
+	
+
+        /*========== Colors ==========*/
+        /* Change favorite color */
+
+        --body-color: rgb(233,217,132);
+        --body-dec1: rgba(233,217,132,1);
+        --body-dec2: rgba(255,255,255,1);
+        --body-dec3: rgba(0,212,255,1);
+
+
+
+        --text-color: #5B4404;
+        --hover-color: #FFFFFF;
+        --shadow-color: #85929E;
+
+        /*========== Font and typography ==========*/
+        --body-font: 'Merriweather', sans-serif;
+
+        /* .5rem = 8px, 1rem = 16px, 1.5rem = 24px ... */
+        --big-font-size: 2rem;
+        --h1-font-size: 1.5rem;
+        --h2-font-size: 1.25rem;
+        --h3-font-size: 1.125rem;
+        --normal-font-size: .938rem;
+        --small-font-size: .813rem;
+        --smaller-font-size: .75rem;
+
+        /*========== Font weight ==========*/
+        --font-medium: 500;
+        --font-semi-bold: 600;
+
+        /*========== Margenes Bottom ==========*/
+        /* .25rem = 4px, .5rem = 8px, .75rem = 12px ... */
+        --mb-0-25: .25rem;
+        --mb-0-5: .5rem;
+        --mb-0-75: .75rem;
+        --mb-1: 1rem;
+        --mb-1-5: 1.5rem;
+        --mb-2: 2rem;
+        --mb-2-5: 2.5rem;
+        --mb-3: 3rem;
+
+        /*========== z index ==========*/
+        --z-tooltip: 10;
+        --z-fixed: 100;
+        --z-modal: 1000;
+}
+html{
+
+}
+body {
+	padding-top: 1%;
+    margin: 5px 0 5px 0;
+    font-family: var(--body-font);
+    font-size: var(--normal-font-size);
+    color: var(--text-color);
+    background-color: var(--body-color);
+    background: linear-gradient(0deg, var(--body-dec1) 0%, var(--body-dec2) 100%);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+h1{
+	font-size: var(--big-font-size);
+	text-align:center;;
+}
+img{
+	
+	width: 200px;
+	border-radius: 100px;
+	display:block;
+	margin:auto;
+}
+.container{
+	width: 70%;
+	margin-left: 15%;
+	padding-top: 2%;
+	padding-bottom: 1%;
+	border: 2px outset var(--text-color);
+}
+p{
+	font-size: var(--h3-font-size);
+	text-align:center;
+}
+.boton{
+	width: 50%;
+	margin: auto;
+	padding: 10px 4px 10px 4px;
+	border: 2px solid var(--text-color);
+	margin-bottom: 10px;
+	border-radius: 20px;
+	box-shadow: 5px 10px 8px var(--shadow-color);
+
+}
+.boton:hover{
+	box-shadow: 5px 10px 8px var(--hover-color);
+}
+.boton a{
+	text-decoration-line: none;
+	color: var(--text-color);
+
+} 
+a i{
+	width: 40%;
+	font-size: var(--h1-font-size);
+	
+}
+a span{
+	width: 60%;
+	text-align: center;
+	font-size: var(--smaller-font-size);
+
+}
+#asistencia{
+	font-size: var(--h2-font-size);
+	padding: 3% 0 0 0;
+}
+#datos{
+	width: 50%;
+	margin: auto;
+	text-align: center;
+	padding: 0 2% 4% 2%;
+	border: 2px solid var(--text-color);
+	border-radius: 30px;
+	box-shadow: 5px 10px 8px var(--shadow-color);
+}
+#datos p{
+	margin-top: 2%;
+}
+
+#datos input{
+	width: 100%;
+	height: var(--mb-2);
+	margin-top: 2%;
+	margin-bottom: 3%;
+	background-color: var(--body-color);
+	border-radius: 15px;
+
+}
+#datos a{
+	
+	text-decoration-line: none;
+	color: var(--text-color);
+
+}
+#Confirmar{
+	width: 100%;
+	margin: auto;
+	border: 2px solid var(--text-color);
+	border-radius: 15px;
+	text-align: center;
+	padding: 5px 0 5px 0;
+	font-size: var(--normal-font-size);
+	font-weight: var(--font-semi-bold);
+	background-color: white;
+}
+#Confirmar:hover{
+	box-shadow: 5px 10px 8px var(--shadow-color);
+}
